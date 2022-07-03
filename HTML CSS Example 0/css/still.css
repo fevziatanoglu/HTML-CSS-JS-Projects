@@ -1,0 +1,178 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2{
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.navigationBar{
+
+    background-color: #553982;
+    color: #AD84B3;
+    
+    
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    margin: 0;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+}
+
+.logo{
+    margin: 0.2rem;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+.links{
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+
+    font-size: 1em;
+}
+
+
+
+.link{
+    padding-left: 1em;
+    padding-right: 1em;
+    
+    /*ust classtaki rengi al*/
+    color: inherit;
+
+    text-decoration: none;
+}
+
+.link:hover{
+    background-color: #6F4CA8;
+}
+
+
+
+.banner{
+
+    background: url(https://picsum.photos/2080/520)
+    no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+   
+
+    }
+
+.banner-item{
+    padding: 5% 0 ;
+}
+
+.banner-item-text{
+    
+    margin: auto;
+    padding: 3em;
+    width: 70%; 
+    
+    
+
+    text-align: center;
+    color: wheat;
+    text-shadow: 0 0 5px black;
+    background-color: rgba(0,0,0, 0.2);
+    
+}
+
+
+
+
+.main-content{
+   
+background-color: #553982;
+    display: flex;
+    
+    flex-direction: row;
+}
+
+.content-item{
+
+    padding: 2em;
+    text-align: center;
+    color: #C896CF ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.form-container{
+    background: url(https://picsum.photos/2080/1480)
+    no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    align-items: center;
+}
+
+
+.form-container form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: auto;
+    width: 50%;
+}
+
+.form-container input,textarea,button{
+    font-weight: bold;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+
+    font-size: 1em;
+}
+
+.form-container h1{
+    padding: 1em;
+    color: #AD84B3;
+    text-shadow: 0 0 5px black;
+    background-color: rgba(0,0,0, 0.2);
+}
+
+.form-container button{
+    background: url(https://picsum.photos/700/100)no-repeat;
+    
+    background-color: #C896CF;
+    
+    color: whitesmoke;
+
+    align-self: center;
+     width: 80%;
+}
+
+
+
+
+
+
+
+
+
