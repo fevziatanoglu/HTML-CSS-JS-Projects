@@ -1,0 +1,26 @@
+.container{
+    display: grid;
+    grid-template-columns : repeat(auto-fit,minmax(201px,1fr));
+    /*201 pikselden sonra */
+    grid-auto-rows: 201px;
+    gap: 10px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.v{
+    grid-row: span 2;
+}
+
+.h{
+    grid-column: span 2;
+}
+
+.b{
+    grid-row: span 2;
+    grid-column: span 2;
+}
