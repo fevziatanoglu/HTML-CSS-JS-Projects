@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: url(https://picsum.photos/2080/980) no-repeat fixed;
+    background-size: cover;
+
+    
+}
+
+
+header{
+    
+    text-align: center;
+}
+
+header h1{
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 2em;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 80%;
+}
+
+.add-todo{
+   
+    padding: 2em;
+    margin: 1em;
+
+    
+}
+
+.add-todo-item{
+    border-radius: 0.2em;
+    padding: 0.5em;
+    border: none;
+}
+
+.todolist-container{
+        
+        padding: 1em;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+        
+}
+
+.todolist{
+    list-style: none;
+   
+    min-width: 40%;
+    padding: 1em;
+}
+
+.todo{
+    background-color: white;
+    margin: 0.5em;
+    padding: 0.5em;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.todo-checked{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.todo-text{
+    flex:1;
+}
+
+.checkButton , .deleteButton{
+    padding: 0.5em;
+    margin: 0.2em;
+}
+
+.checkButton{
+    background-color: green;
+}
+
+.deleteButton{
+    background-color: red;
+}
+
+    
