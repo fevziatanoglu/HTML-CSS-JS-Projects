@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+body{
+    background: url(https://picsum.photos/2080/980) no-repeat fixed;
+    background-size: cover;
+}
+
+.header{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5%;
+    
+     
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 0.05em 0.05em white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+.form{
+   
+
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+
+  
+}
+
+.todo-input{
+    min-width: 50%;
+    
+}
+
+.todo-input,.todo-add-btn{
+    
+    
+    min-height: 5%;
+    padding: 1%;
+}
+
+.todo-list{
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    
+
+    display: flex;
+    flex-direction: column;
+
+    
+    align-items: stretch;
+    
+}
+
+.todo-list-item{
+    margin: 1em;
+    padding: 0.5em;
+
+    background-color: white;
+    border-radius: 0.5em;
+   
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.todo-list-item-checked{
+ 
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.todo-text{
+    flex: 1;
+}
+
+.todo-check-btn{
+    
+    background-color: green;
+}
+
+.todo-delete-btn{
+   
+    background-color: red;
+}
+
+
+
+.todo-check-btn,.todo-delete-btn{
+    padding: 1em;
+    margin-left: 1em
+    
+}
+
+
