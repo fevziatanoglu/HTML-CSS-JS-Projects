@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    
+    /*Full screen*/
+
+   
+
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:  100%;
+    height: 100%;
+
+
+
+    
+
+
+    display: flex;
+    flex-direction: column;
+
+    /* x un centeri*/
+    align-items: center;
+
+    /* y nin centeri */
+    justify-content: center;
+    
+}
+
+
+
+.text{
+    
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0.05em 0.05em white;
+    padding: 1em;
+}
+
