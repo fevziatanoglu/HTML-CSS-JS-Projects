@@ -6,9 +6,26 @@
 
 
 
+
+
 body{
     background: url(https://picsum.photos/2080/980) no-repeat fixed;
     background-size: cover;
+}
+
+
+.main-background{
+    
+    background-color: rgba(175, 165, 219,0.5 );
+    margin: 5em;
+    padding: 2em;
+
+    border-radius: 5em;
+
+    
+    
+ 
+
 }
 
 .header{
@@ -18,7 +35,7 @@ body{
     justify-content: center;
     align-items: center;
 
-    margin: 5%;
+    margin-bottom: 5%;
     
      
     font-size: 2em;
@@ -59,6 +76,8 @@ body{
 }
 
 .todo-list{
+    list-style-type: none;
+
     margin-left: 5%;
     margin-right: 5%;
     
@@ -67,8 +86,12 @@ body{
     display: flex;
     flex-direction: column;
 
+    justify-content: center;
     
-    align-items: stretch;
+    
+
+    
+    
     
 }
 
@@ -82,14 +105,23 @@ body{
 
     display: flex;
     flex-direction: row;
-
     align-items: center;
+
+    /*ekleme cikarma animasyonunun suresi*/
+    transition: 2s ease-in-out;
+
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
 
 .todo-list-item-checked{
- 
     text-decoration: line-through;
-    opacity: 0.5;
+    opacity: 0.4;
+}
+
+.todo-list-item-deleted{
+    /*0 olana kadar küçükt*/
+    transform: scale(0);
 }
 
 .todo-text{
@@ -97,21 +129,22 @@ body{
 }
 
 .todo-check-btn{
-    
     background-color: green;
 }
 
 .todo-delete-btn{
-   
     background-color: red;
 }
 
+.clear-btn{
+    opacity: 0.2;
+    font-size: 1%;
+}
 
 
-.todo-check-btn,.todo-delete-btn{
-    padding: 1em;
-    margin-left: 1em
-    
+.todo-check-btn,.todo-delete-btn ,.clear-btn{
+    padding: 0.5em;
+    margin-left: 0.5em;
 }
 
 
