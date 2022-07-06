@@ -6,11 +6,11 @@ container.addEventListener('mousemove', function (e){
     console.log("X:" + e.clientX);
     console.log("Y:" + e.clientY);
 
-    colorText.textContent =` R: ${e.clientX%255} G: ${e.clientX%255} B: ${(e.clientX,+e.clientY)%255}`;
+    colorText.textContent =` R: ${e.clientX%255} G: ${e.clientY%255} B: ${(e.clientX+e.clientY)%255}`;
      
-    container.style.color =`rgb(${255-e.clientX%255},${255-e.clientX%255},${(255 - e.clientX,+e.clientY)%255})`;
+    container.style.color =`rgb(${255-e.clientX%255},${255-e.clientY%255},${(255 - e.clientX,+e.clientY)%255})`;
 
-    container.style.backgroundColor = ` rgb(${e.clientX%255},${e.clientX%255},${(e.clientX,+e.clientY)%255})`;
+    container.style.backgroundColor = ` rgb(${e.clientX%255},${e.clientY%255},${(e.clientX+e.clientY) %255})`;
 
 });
 
