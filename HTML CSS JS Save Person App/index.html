@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div >
+    <h1>Save Contact App</h1>
+
+        <div class="info info-success">Person saved successfully!</div>
+        <div class="info info-error">You have to fill all fields!</div>
+
+    <form id="form">
+        <div class="input-container">
+        <label for="name-input">Name</label>
+        <input type="text" id="name-input" class=" u-full-width">
+        </div>
+
+
+        <div class="input-container">
+        <label for="surname-input">Surname</label>
+        <input type="text" id="surname-input" class="u-full-width">
+         </div>
+
+        <div class="input-container"></div>
+        <label for="email-input">Email</label>
+        <input type="text" id="email-input" class=" u-full-width">
+        </div>
+
+        <div>
+        <input type="submit" id="submit-btn" value="Save" class="button-primary button u-full-width">
+         </div>
+
+         
+    </form>
+
+    <hr>
+
+    <table class="u-full-width">
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+
+        <tbody id="person-list">
+            <tr>
+                <td>Fevzi</td>
+                <td>Fevzi</td>
+                <td>fevzi@gmail.com</td>
+                <td>
+                    <button class="btn edit-btn"><i class="fa-solid fa-user-pen" style="pointer-events: none;"></i></button>
+                    <button class="btn delete-btn"><i class="fa-solid fa-trash" style="pointer-events: none;"></i></button>
+                </td>
+            </tr>
+        </tbody>
+
+
+    </table>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>

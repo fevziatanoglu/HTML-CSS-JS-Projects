@@ -1,0 +1,44 @@
+body{
+    color: white;
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+}
+
+.btn{
+    border: none;
+    padding: 0;
+    font-size: 100%;
+    margin-left: 1rem;
+}
+
+.delete-btn{
+    color: red;
+}
+
+.edit-btn{
+    color: green;
+}
+
+.info{
+    font-weight: bold;
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 4em;
+    border: 1px solid black;
+}
+
+.info-success{
+    display: none;
+border-color: green;
+    
+}
+
+.info-error{
+    display: none;
+    border-color: red;
+}
+
