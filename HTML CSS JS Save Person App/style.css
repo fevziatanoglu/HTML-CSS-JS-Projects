@@ -14,11 +14,12 @@ h1{
     margin-left: 1rem;
 }
 
-.delete-btn{
+.delete-btn , .edit-cancel-btn{
     color: red;
 }
 
-.edit-btn{
+
+.edit-btn,.edit-check-btn{
     color: green;
 }
 
