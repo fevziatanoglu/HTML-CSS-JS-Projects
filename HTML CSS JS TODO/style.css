@@ -11,6 +11,7 @@
 body{
     background: url(https://picsum.photos/2080/980) no-repeat fixed;
     background-size: cover;
+    background-position: center;
 }
 
 
