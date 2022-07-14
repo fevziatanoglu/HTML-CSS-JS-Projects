@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    background-color: #9EB23B;
+}
+
+#calculator-container{   
+    background-color: #606061;
+    margin: auto;
+    margin-top: 5%;
+    
+    height: 60vh;
+    width: 50vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 2rem;
+    box-shadow: 1rem 1rem 1rem black;
+    
+
+    
+}
+
+#screen-container{
+    background-color: #434243;
+    border-radius: 2rem 2rem 0 0;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 2;
+}
+
+#screen{
+
+    background-color: #9dcc64;
+
+    text-align: end;
+    font-size: 300%;
+
+    height: 70%;
+    width: 85%;
+    border-radius: 3rem;
+    margin: 5%;
+
+    
+}
+
+#numbers{
+    width: 100%;
+    
+    flex: 5;
+    display: grid;
+    
+    padding: 1rem;
+    
+
+    grid-template-areas:
+    "one two three plus"
+    "four five six minus"
+    "seven eight nine multy"
+    "zero dote equal over"
+   
+}
+
+#one{grid-area: one;}
+#two{grid-area: two;}
+#three{grid-area: three;}
+#four{grid-area: four;}
+#five{grid-area: five;}
+#six{grid-area: six;}
+#seven{grid-area: seven;}
+#eight{grid-area: eight;}
+#nine{grid-area: nine;}
+#zero{grid-area: zero;}
+#plus{grid-area: plus;}
+#minus{grid-area: minus;}
+#multy{grid-area: multy;}
+#over{grid-area: over;}
+#dote{grid-area: dote;}
+#equal{grid-area: equal;}
+
+
+.number-btn{
+    border: none;
+    background-color: #e0e1e1;
+    color: black;
+
+    margin: auto;
+    
+    height: 70%;
+    width: 80%;
+
+
+    text-align: center;
+    border-radius: 1em;
+    font-size: 170%;
+    font-weight: bold;
+}
+
+#equal{
+    background-color: #ff5552;
+}
+
+
+
