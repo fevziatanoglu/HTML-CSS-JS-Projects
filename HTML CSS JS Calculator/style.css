@@ -66,10 +66,12 @@ body{
     
 
     grid-template-areas:
+    
     "one two three plus"
     "four five six minus"
     "seven eight nine multy"
     "zero dote equal over"
+    
    
 }
 
@@ -89,22 +91,23 @@ body{
 #over{grid-area: over;}
 #dote{grid-area: dote;}
 #equal{grid-area: equal;}
+#delete{grid-area: delete;}
 
 
-.number-btn{
+.btn{
     border: none;
     background-color: #e0e1e1;
     color: black;
-
-    margin: auto;
     
+    margin: auto;
     height: 70%;
     width: 80%;
 
-
+    
+    
     text-align: center;
     border-radius: 1em;
-    font-size: 170%;
+    font-size: 200%;
     font-weight: bold;
 }
 
