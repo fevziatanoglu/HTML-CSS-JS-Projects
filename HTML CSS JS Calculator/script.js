@@ -14,6 +14,9 @@ buttonsArray.forEach(button => {
              screen.value += button.innerText;
              console.log(button.innerText);
 
+
+             writeOperator=true;
+
              
         }
 
@@ -22,7 +25,7 @@ buttonsArray.forEach(button => {
              console.log(button.innerText);
 
              writeOperator = false;
-             writeNumber = true;
+             
         }
         
         else if(button.classList.contains("equal-btn") && writeOperator){

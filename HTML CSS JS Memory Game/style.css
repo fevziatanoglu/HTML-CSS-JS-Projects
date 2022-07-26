@@ -1,0 +1,78 @@
+:root{
+    --main-color: #937DC2;
+    --second-color:#C689C6;
+    --third-color:#E8A0BF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+   
+    background-color:   var(--main-color);
+     min-height: 100vh    ;
+    
+    
+}
+
+
+.back-face , .front-face{
+    max-height: 10%;
+    max-width: 10%;    
+}
+
+.front-face{
+    display: block;
+}
+
+.back-face{
+    display: none;
+}
+
+.memory-game{
+    height: 50%;
+    width: 25%;
+    background-color: var(--second-color);
+
+    border-radius: 5%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    padding: 1%;
+}
+
+.cards{
+    
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    font-size: 200%;
+ 
+}
+
+.card{
+
+    background-color: var(--third-color);
+    box-shadow: 2px 2px 5px black;
+    border-radius: 7%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-face , .front-face{
+    position: absolute;
+}
+
