@@ -1,51 +1,53 @@
 :root{
-    --main-color: #937DC2;
-    --second-color:#C689C6;
-    --third-color:#E8A0BF;
+    --main-color: #46871E  ;
+    --second-color:#EDEDED ;
+    --third-color:#FFFFFF;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: var(--main-color);
 }
 
 body  {
    
     background-color:   var(--main-color);
-     min-height: 100vh    ;
+     min-height: 100vh;
+
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
     
-    
-}
-
-
-.back-face , .front-face{
-    max-height: 10%;
-    max-width: 10%;    
-}
-
-.front-face{
-    display: block;
-}
-
-.back-face{
-    display: none;
 }
 
 .memory-game{
-    height: 50%;
-    width: 25%;
+    height: 500px;
+    width: 500px;
     background-color: var(--second-color);
-
+    
     border-radius: 5%;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-    padding: 1%;
+    padding: 2%;
 }
+
+
+
+
+.front-face{
+    display: block;
+    max-width: 50%;
+}
+
+.back-face{
+    max-width: 50%;
+    display: none;
+}
+
+
 
 .cards{
     
@@ -57,22 +59,86 @@ body  {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 
-    font-size: 200%;
+    
  
 }
 
-.card{
-
+.card{ 
     background-color: var(--third-color);
-    box-shadow: 2px 2px 5px black;
+    /* box-shadow: 1px 1px 2px var(--main-color); */
     border-radius: 7%;
     margin: 5%;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-size: 2em;
 }
 
-.back-face , .front-face{
-    position: absolute;
+.card.shake{
+    animation: shake 0.35s ease-in-out ;
+}
+
+.card.correct{
+    animation: up 0.35s ease-in-out ;
+    background-color: chartreuse;
+}
+
+.card.flip{
+    animation: flip 0.15s ease-in-out; 
+}
+
+@keyframes shake {
+    0%,100%{
+        transform: translate(0,0);
+    }
+
+    10% , 40% , 70% {
+        transform: translate(0,5px);
+    }
+
+    25%, 55% ,85%{
+        transform:  translate(0,-5px)
+    }
+
+}
+
+@keyframes up {
+     1%,100%{
+        transform: translateY(0,0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    } 
+
+   
+
+   
+}
+@keyframes flip {
+    0% {
+        transform:  
+                   perspective(200px) 
+                   rotateX(0deg) ;
+                   
+    }
+
+
+
+    50% {
+        transform: 
+                   perspective(200px) 
+                   rotateX(-180deg) ;
+                   
+    }
+
+    100% {
+        transform:  
+                   perspective(200px) 
+                   rotateX(0deg) ;
+                   
+    }
 }
 
